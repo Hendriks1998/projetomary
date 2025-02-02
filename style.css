@@ -33,13 +33,25 @@
     font-family: Arial, sans-serif;
 }
 
-.home-img  {
-
-    width: 300px;
+.home-img {
+    width: 50%; /* Tamanho da imagem baseado na largura da tela */
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
     height: auto;
     border-radius: 50%;
     margin-top: 20px;
-    
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .home-img {
+        width: 70%; /* Aumenta a largura da imagem em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-img {
+        width: 80%; /* Aumenta ainda mais em telas muito pequenas */
+    }
 }
 
 
