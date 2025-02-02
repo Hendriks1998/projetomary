@@ -238,9 +238,9 @@ span{
 }
 
 .home-img img {
-    width: 50vw; /* A largura da imagem será 50% do viewport */
-    max-width: 300px; /* Limita a largura máxima */
-    height: auto; /* A altura será proporcional à largura */
+    width: 50vw; 
+    max-width: 300px; 
+    height: auto; 
     border-radius: 50%;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -250,14 +250,14 @@ span{
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .home-img img {
-        width: 60vw; /* Aumenta um pouco a largura da imagem em telas menores */
-        max-width: none;  /* Remove o limite máximo de largura */
+        width: 60vw; 
+        max-width: none;  
     }
 }
 
 @media (max-width: 480px) {
     .home-img img {
-        width: 70vw; /* A imagem ocupa 70% da largura da tela em telas muito pequenas */
+        width: 70vw; 
     }
 }
 
