@@ -33,26 +33,38 @@
     font-family: Arial, sans-serif;
 }
 
-.home-img {
-    width: 50%; /* Tamanho da imagem baseado na largura da tela */
-    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    .home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Isso garante que o container ocupe toda a largura disponível */
     height: auto;
+}
+
+.home-img img {
+    width: 50vw; /* A largura da imagem será 50% do viewport */
+    max-width: 300px; /* Limita a largura máxima */
+    height: auto; /* A altura será proporcional à largura */
     border-radius: 50%;
-    margin-top: 20px;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-    .home-img {
-        width: 70%; /* Aumenta a largura da imagem em telas menores */
+    .home-img img {
+        width: 60vw; /* Aumenta um pouco a largura da imagem em telas menores */
+        max-width: none;  /* Remove o limite máximo de largura */
     }
 }
 
 @media (max-width: 480px) {
-    .home-img {
-        width: 80%; /* Aumenta ainda mais em telas muito pequenas */
+    .home-img img {
+        width: 70vw; /* A imagem ocupa 70% da largura da tela em telas muito pequenas */
     }
 }
+
 
 
 h3 {
