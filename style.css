@@ -34,18 +34,15 @@
 }
 
 .home-img  {
+
+    max-width: 100%;
     width: 300px;
     height: auto;
     border-radius: 50%;
     margin-top: 20px;
+    
 }
 
-    @media (max-width: 768px) {
-  .menu img {
-    width: 50%; /* A imagem ocupará 50% da largura do menu */
-    height: auto;
-  }
-}
 
 h3 {
     margin-top: 20px;
